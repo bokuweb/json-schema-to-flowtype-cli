@@ -1,0 +1,31 @@
+---
+$schema: "http://json-schema.org/draft-04/schema#"
+id: "yamlSample"
+title: "Bookshop"
+type: "object"
+required:
+  - "name"
+  - "place"
+properties:
+  name:
+    type: "string"
+  place:
+    type: "object"
+    required:
+      - "large_area"
+      - "small_area"
+      - "address"
+      - "latitude"
+      - "longitude"
+    properties:
+      large_area:
+        type: "string"
+      small_area:
+        type: "string"
+      address:
+        type: "string"
+      latitude:
+        type: "number"
+      longitude:
+        type: "number"
+additionalProperties: false
