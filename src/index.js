@@ -1,3 +1,5 @@
+/* @flow */
+
 const { writeFileSync, readFileSync } = require('fs');
 const path = require('path');
 const { Spinner } = require('cli-spinner');
@@ -8,15 +10,20 @@ const { parseSchema } = require('json-schema-to-flow-type');
 
 const SCHEMA_FILES = '/**/*.+(json|yml|yaml)';
 
-const generate = (params) => {
+type Params = {
+  targetDir: string;
+  outputDir: string;
+}
+
+const generate = (params: Params) => {
 
   const spinner = new Spinner('processing... %s');
   spinner.setSpinnerString('⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏');
   spinner.start();
 
-  const files = glob.sync(path.join(params.targetDir, SCHEMA_FILES));
+  const files: string[] = glob.sync(path.join(params.targetDir, SCHEMA_FILES));
 
-  files.forEach(file => {
+  files.forEach((file: string) => {
     try {
       const schema = readFileSync(file, 'utf8')
       const extname = path.extname(file);
@@ -36,7 +43,5 @@ const generate = (params) => {
   });
   spinner.stop(true);
 };
-
-generate({ targetDir: './samples', outputDir: '__gen__' });
 
 module.exports = generate;

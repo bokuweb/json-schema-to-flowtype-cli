@@ -9,7 +9,8 @@
     "build": "babel src -d dist",
     "watch": "babel src --watch -d dist",
     "flow": "flow",
-    "test": "npm run build && ava test/test.js"
+    "prepubish": "npm run build",
+    "test": "npm run build && chmod +x dist/cli.js && ava test/test.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -31,10 +32,9 @@
     "flow-typed": "^2.1.1"
   },
   "files": [
-    "dist",
-    "template"
+    "dist"
   ],
   "bin": {
-    "reg-cli": "./dist/cli.js"
+    "json-schema-to-flowtype": "./dist/cli.js"
   }
 }
