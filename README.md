@@ -1,5 +1,7 @@
 # json-schema-to-flowtype-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bokuweb/json-schema-to-flowtype-cli.svg)](https://greenkeeper.io/)
+
 json schema to flowtype cli tool.
 
 [![Build Status](https://img.shields.io/travis/bokuweb/json-schema-to-flowtype-cli.svg?style=flat-square)](https://travis-ci.org/bokuweb/json-schema-to-flowtype-cli)
