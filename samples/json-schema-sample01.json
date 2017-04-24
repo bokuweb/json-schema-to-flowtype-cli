@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "sample01",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Name of the customer",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name"
+    ]
+}
