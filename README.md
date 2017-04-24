@@ -49,6 +49,8 @@ generate({
 
 ### TODO
 
+- [x] *.json support
+- [x] *.yaml or *.yml support
 - [ ] Github repository support for target.
 
 
