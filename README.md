@@ -29,7 +29,7 @@ $ npm i -D json-schema-to-flowtype-cli
 ### CLI
 
 ``` sh
-$ json-schema-to-flowtype-cli /path/to/target-dir -O /path/to/output-dir
+$ json-schema-to-flowtype /path/to/target-dir -O /path/to/output-dir
 ```
 
 ####  Options
