@@ -18,7 +18,7 @@
     "cli-spinner": "^0.2.6",
     "glob": "^7.1.1",
     "js-yaml": "^3.8.3",
-    "json-schema-to-flow-type": "^0.2.6",
+    "json-schema-to-flow-type": "^0.3.1",
     "meow": "^3.7.0",
     "mkdirp": "^0.5.1"
   },
