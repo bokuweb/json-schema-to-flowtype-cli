@@ -19,7 +19,7 @@
     "glob": "^7.1.1",
     "js-yaml": "^3.8.3",
     "json-schema-to-flow-type": "^0.2.6",
-    "meow": "^3.7.0",
+    "meow": "^5.0.0",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
